@@ -1,1 +1,29 @@
-<p>home works!</p>
+<div class="filters">
+    <mat-form-field>
+        <mat-label>Sort</mat-label>
+        <mat-select panelClass="sort-select" [(ngModel)]="sort">
+            <mat-option value="name">Name</mat-option>
+            <mat-option value="-released">Released</mat-option>
+            <mat-option value="-added">Added</mat-option>
+            <mat-option value="-created">Created</mat-option>
+            <mat-option value="-updated">Updated</mat-option>
+            <mat-option value="-rating">Rating</mat-option>
+            <mat-option value="metacritic">Metacritic</mat-option>
+        </mat-select>
+    </mat-form-field>
+</div>
+
+<div class="games">
+    <div class="game">
+        <div class="game-thumb-container">
+            <img src="https://i0.wp.com/gamehero.co.za/wp-content/uploads/2019/06/grand-theft-auto-v-premium-online-edition-cover-e1570476540377.jpg?fit=720%2C1001&ssl=1" alt="thumbnail" class="game-thumbnail">
+        </div>
+        <div class="game-description">
+            <p class="game-name">Name</p>
+            <div class="game-platforms">
+                <img class="game-platform" src="https://th.bing.com/th/id/R.0a3b2566cf1badc065cf6a475d1a435a?rik=wCWDHI09bjG8Zg&riu=http%3a%2f%2flogok.org%2fwp-content%2fuploads%2f2014%2f12%2fXbox-logo.png&ehk=tkb0drTUy2lDtRJovN0KHAIm59S0n3lNLv3twUywdrs%3d&risl=&pid=ImgRaw&r=0"
+                    alt="slug">
+            </div>
+        </div>
+    </div>
+</div>
